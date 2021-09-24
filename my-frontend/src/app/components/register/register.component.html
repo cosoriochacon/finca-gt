@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <h2>Register</h2>
+                    </h5>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Username</label>
+                        <input type="text" class="form-control" [(ngModel)]="form.username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Password</label>
+                        <input type="password" class="form-control" [(ngModel)]="form.password">
+                    </div>
+                    <div class="mb-3 d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary" (click)="register()">Register</button>
+                    </div>
+                    <div class="ui message">
+                        Do you already have an account? <a href="login">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

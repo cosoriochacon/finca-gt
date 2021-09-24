@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand context-menu" (click)="goTo('credential/list')">
+            <img src="../../../assets/arbol.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            FINCA GUATEMALA
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav" *ngIf="isLogin">
+            <ul class="navbar-nav">
+                <li class="nav-item context-menu">
+                    <a class="nav-link" (click)="goTo('credential/list')">Credential</a>
+                </li>
+                <li class="nav-item context-menu">
+                    <a class="nav-link" (click)="goTo('message/list')">Messages</a>
+                </li>
+            </ul>
+        </div>
+        <span class="navbar-text context-menu" *ngIf="isLogin">
+            <button class="btn btn-danger" (click)="logout()">Cerrar Sesión</button>
+        </span>
+    </div>
+</nav>
