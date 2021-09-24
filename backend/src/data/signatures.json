@@ -1,0 +1,17 @@
+[
+  {
+    "route": "/message",
+    "method": "POST",
+    "signature": "3a8bb11b189aa17f4c65919769d2cd545f2ccd0d24169c89380202dcb496cb82"
+  },
+  {
+    "route": "/message/:id",
+    "method": "GET",
+    "signature": "1e33b33a4eb00387e269566294011c7b409324b5c319d6df4ea26a86e53f2ede"
+  },
+  {
+    "route": "/messages/:tag",
+    "method": "GET",
+    "signature": "9c61f33cb73a05fc370440e6d024dcbf5b4b81f8d400e62b284a4072d220230d"
+  }
+]
