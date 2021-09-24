@@ -30,7 +30,7 @@ export class NavbarComponent implements DoCheck {
       text: '',
       icon: 'success',
     }).then(() => {
-      this.router.navigateByUrl('/login');
+      window.location.reload();
     });
   }
 }
